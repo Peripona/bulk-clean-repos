@@ -6,12 +6,12 @@ This project is to showcase how to clean all the repos from a git repos using sh
 
 curl -s https://api.github.com/users/peripona/repos?per_page=200 | ruby -rubygems -e 'require "json"; JSON.load(STDIN.read).each { |repo| %x[git clone #{repo["clone_url"]} ]}'
 
-### Steps followed 
-1. fetch all the repos names ( run )
-1. create a text file and write repo names in it 
-1. generate a Authorization Token for repo delete access 
-1. use this token in bash file 
-1. run the bash
+### Steps followed
+1. Open `fetchSaveRepo.js` and update your repos url
+1. `node fetchSaveRepo.js`
+1. Generate a Authorization Token for repo delete access [token](https://github.com/settings/tokens/new)
+1. Copy the token and put in in place `xxx` in `deleteRepos.sh`
+1. `./deleteRepos.sh`
 
 #### Requirements 
 1. You on mac
