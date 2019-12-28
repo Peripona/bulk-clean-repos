@@ -1,0 +1,23 @@
+{
+  "name": "bulk-clean-repos",
+  "version": "1.0.0",
+  "description": "This project is to showcase how to clean all the repos from a git repository using shell and node",
+  "main": "fetchSaveRepo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Peripona/bulk-clean-repos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Peripona/bulk-clean-repos/issues"
+  },
+  "homepage": "https://github.com/Peripona/bulk-clean-repos#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.0"
+  }
+}
