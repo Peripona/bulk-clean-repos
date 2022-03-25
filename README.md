@@ -9,6 +9,7 @@ curl -s https://api.github.com/users/peripona/repos?per_page=200 | ruby -rubygem
 > This might take some time, please make sure all your repos are backed, unless you don't care then leave this step.
 
 ### Delete all repos 
+1. install node-fetch `npm install node-fetch@2`
 1. Open `fetchSaveRepo.js` and update your repos url
 1. `node fetchSaveRepo.js`
 1. Generate a Authorization Token for repo delete access [token](https://github.com/settings/tokens/new)
